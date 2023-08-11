@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = plasma-meta
+Target = plasma-desktop
+
+[Action]
+Description = Disabling Klipper and deleting it completely after a plasma-desktop upgrade
+When = PostTransaction
+Exec = /etc/pacman.d/hooks/klipper-fucker.sh
