@@ -17,9 +17,11 @@ else
 fi
 
 # deleting klipper
-echo "deleting klipper"
+echo "deleting klipper and its fucking history"
 rm -fv /usr/share/applications/org.kde.klipper.desktop
 rm -fv /usr/bin/klipper
+rm -fv /etc/skel/.config/autostart/org.kde.klipper.desktop
+rm -fv /home/rory/.local/share/klipper/*
 
-echo "Klipper has been deleted,disabled. It won't bother you until the next update!"
+echo "Klipper has been deleted,disabled. Hopefully it won't bother you until the next update!"
 # where pacman hooks live > /etc/pacman.d/hooks
